@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>首页</title>
+    <link rel="stylesheet" href="static/css/style.css?v=0" />
+</head>
+
+<body ontouchend="">
+    <div id="body" v-cloak="">
+        hello: {{msg}}
+
+    </div>
+
+    <!-- body end -->
+    <script src="static/lib/require.min.js"></script>
+    <script src="static/js/config.js"></script>
+    <script>
+        require(['vue', 'jq'], function (Vue) {
+
+
+            $vm = new Vue({
+                el: '#body',
+                data: {
+                    msg:'Vue'
+                },
+                methods: {
+                }
+            })
+
+
+          
+        })
+    </script>
+
+</body>
+
+</html>
